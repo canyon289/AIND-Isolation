@@ -36,9 +36,7 @@ def custom_score(game, player):
     float
         The heuristic value of the current game state to the specified player.
     """
-
-    # TODO: finish this function!
-    raise NotImplementedError
+    return len(game.get_legal_moves())
 
 
 class CustomPlayer:
@@ -129,7 +127,8 @@ class CustomPlayer:
             # here in order to avoid timeout. The try/except block will
             # automatically catch the exception raised by the search method
             # when the timer gets close to expiring
-            pass
+            utility,move = self.minimax(game, self.search_depth)
+            return move
 
         except Timeout:
             # Handle any actions required at timeout, if necessary
@@ -172,8 +171,28 @@ class CustomPlayer:
         if self.time_left() < self.TIMER_THRESHOLD:
             raise Timeout()
 
-        # TODO: finish this function!
-        raise NotImplementedError
+        if depth == 0:
+            return self.score(game, self)
+
+        else:
+            legal_moves = game.get_legal_moves()
+            if maximizing_player is True:
+                utility_list = []
+                for move in legal_moves:
+                    next_game_state = game.forecast_move(move)
+                    node_score = self.minimax(next_game_state, depth-1, maximizing_player=False)
+                    utility_list.append((move, node_score))
+                move, utility = max(utility_list, key=lambda x: x[1])
+                return utility, move
+
+            if maximizing_player is False:
+                utility_list = []
+                for move in legal_moves:
+                    next_game_state = game.forecast_move(move)
+                    node_score = self.minimax(next_game_state, depth-1, maximizing_player=True)
+                    utility_list.append((move, node_score))
+                move, utility = min(utility_list, key=lambda x: x[1])
+                return utility, move
 
     def alphabeta(self, game, depth, alpha=float("-inf"), beta=float("inf"), maximizing_player=True):
         """Implement minimax search with alpha-beta pruning as described in the

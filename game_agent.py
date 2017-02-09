@@ -36,7 +36,7 @@ def custom_score(game, player):
     float
         The heuristic value of the current game state to the specified player.
     """
-    return len(game.get_legal_moves())
+    return float(len(game.get_legal_moves()))
 
 
 class CustomPlayer:
@@ -175,24 +175,25 @@ class CustomPlayer:
             return self.score(game, self)
 
         else:
-            legal_moves = game.get_legal_moves()
+
             if maximizing_player is True:
-                utility_list = []
-                for move in legal_moves:
-                    next_game_state = game.forecast_move(move)
-                    node_score = self.minimax(next_game_state, depth-1, maximizing_player=False)
-                    utility_list.append((move, node_score))
-                move, utility = max(utility_list, key=lambda x: x[1])
-                return utility, move
+                level_function  = max
 
             if maximizing_player is False:
-                utility_list = []
-                for move in legal_moves:
-                    next_game_state = game.forecast_move(move)
-                    node_score = self.minimax(next_game_state, depth-1, maximizing_player=True)
-                    utility_list.append((move, node_score))
-                move, utility = min(utility_list, key=lambda x: x[1])
-                return utility, move
+                level_function  = min
+
+            legal_moves = game.get_legal_moves()
+
+            if len(legal_moves) == 0:
+                return (-1,-1), 0
+
+            utility_list = []
+            for move in legal_moves:
+                next_game_state = game.forecast_move(move)
+                node_score = self.minimax(next_game_state, depth-1, maximizing_player=(not maximizing_player))
+                utility_list.append((node_score, move))
+            utility, move = level_function(utility_list, key=lambda x: x[0])
+            return utility, move
 
     def alphabeta(self, game, depth, alpha=float("-inf"), beta=float("inf"), maximizing_player=True):
         """Implement minimax search with alpha-beta pruning as described in the

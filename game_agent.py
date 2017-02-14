@@ -7,11 +7,15 @@ You must test your agent's strength against a set of agents with known
 relative strength using tournament.py and include the results in your report.
 """
 import random
+from collections import defaultdict
 
 
 class Timeout(Exception):
     """Subclass base exception for code clarity."""
     pass
+
+INF = 1000000
+NEG_INF = -1 * INF
 
 
 def custom_score(game, player):
@@ -36,7 +40,8 @@ def custom_score(game, player):
     float
         The heuristic value of the current game state to the specified player.
     """
-    return float(len(game.get_legal_moves()))
+    score = float(len(game.get_legal_moves()))
+    return score
 
 
 class CustomPlayer:
@@ -116,8 +121,6 @@ class CustomPlayer:
 
         self.time_left = time_left
 
-        # TODO: finish this function!
-
         # Perform any required initializations, including selecting an initial
         # move from the game board (i.e., an opening book), or returning
         # immediately if there are no legal moves
@@ -127,15 +130,23 @@ class CustomPlayer:
             # here in order to avoid timeout. The try/except block will
             # automatically catch the exception raised by the search method
             # when the timer gets close to expiring
-            utility,move = self.minimax(game, self.search_depth)
+            if len(legal_moves) == 0:
+                move = (-1,-1)
+
+            if self.iterative is True:
+                # Some crazy high number
+                maximum_depth = 100000
+                for depth in range(1, maximum_depth):
+                    utility, move = getattr(self, self.method)(game, depth)
+            else:
+                utility, move = getattr(self, self.method)(game, self.search_depth)
             return move
 
         except Timeout:
             # Handle any actions required at timeout, if necessary
-            pass
-
-        # Return the best move from the last completed search iteration
-        raise NotImplementedError
+            self.search_depth = maximum_depth
+            # Return the best move from the last completed search iteration
+            return move
 
     def minimax(self, game, depth, maximizing_player=True):
         """Implement the minimax search algorithm as described in the lectures.
@@ -172,30 +183,30 @@ class CustomPlayer:
             raise Timeout()
 
         if depth == 0:
-            return self.score(game, self)
+            return self.score(game, self), None
 
         else:
 
             if maximizing_player is True:
-                level_function  = max
+                level_function = max
 
             if maximizing_player is False:
-                level_function  = min
+                level_function = min
 
             legal_moves = game.get_legal_moves()
 
             if len(legal_moves) == 0:
-                return (-1,-1), 0
+                return 0, (-1, -1)
 
             utility_list = []
             for move in legal_moves:
                 next_game_state = game.forecast_move(move)
-                node_score = self.minimax(next_game_state, depth-1, maximizing_player=(not maximizing_player))
+                node_score, _ = self.minimax(next_game_state, depth-1, maximizing_player=(not maximizing_player))
                 utility_list.append((node_score, move))
-            utility, move = level_function(utility_list, key=lambda x: x[0])
+                utility, move = level_function(utility_list, key=lambda x: x[0])
             return utility, move
 
-    def alphabeta(self, game, depth, alpha=float("-inf"), beta=float("inf"), maximizing_player=True):
+    def alphabeta(self, game, depth, alpha=NEG_INF, beta=INF, maximizing_player=True):
         """Implement minimax search with alpha-beta pruning as described in the
         lectures.
 
@@ -233,8 +244,51 @@ class CustomPlayer:
                 to pass the project unit tests; you cannot call any other
                 evaluation function directly.
         """
+
         if self.time_left() < self.TIMER_THRESHOLD:
             raise Timeout()
 
-        # TODO: finish this function!
-        raise NotImplementedError
+        v, _, move_values = self.max_value(game, depth, alpha, beta)
+
+        return v, move_values[v][0]
+
+    def max_value(self, game, depth, alpha, beta):
+        if depth == 0:
+            return self.score(game, self), None, None
+
+        legal_moves = game.get_legal_moves()
+
+        if len(legal_moves) == 0:
+            return 0.0, (-1, -1), None
+
+        v = NEG_INF
+        move_values = defaultdict(list)
+        for move in legal_moves:
+            next_game_state = game.forecast_move(move)
+            node_utility, _ = self.min_value(next_game_state, depth-1, alpha, beta)
+
+            # V is the best value the node as seen so far
+            v = max(node_utility, v)
+            if v >= beta:
+                return v, move, None
+            alpha = max(alpha, v)
+            if depth == self.search_depth:
+                move_values[node_utility].append(move)
+        # Probably don't need move
+        return v, move, move_values
+
+    def min_value(self, game, depth, alpha, beta):
+        if depth == 0:
+            return self.score(game, self), None
+
+        legal_moves = game.get_legal_moves()
+        v = INF
+        for move in legal_moves:
+            next_game_state = game.forecast_move(move)
+            node_utility, _, _ = self.max_value(next_game_state, depth-1, alpha, beta)
+            # V is the best value the node as seen so far
+            v = min(node_utility, v)
+            if v <= alpha:
+                return v, move
+            beta = min(beta, v)
+        return v, move

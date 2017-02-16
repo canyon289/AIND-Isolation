@@ -137,6 +137,7 @@ class CustomPlayer:
                 # Some crazy high number
                 maximum_depth = 100000
                 for depth in range(1, maximum_depth):
+                    self.search_depth = depth
                     utility, move = getattr(self, self.method)(game, depth)
             else:
                 utility, move = getattr(self, self.method)(game, self.search_depth)
@@ -248,47 +249,62 @@ class CustomPlayer:
         if self.time_left() < self.TIMER_THRESHOLD:
             raise Timeout()
 
-        v, _, move_values = self.max_value(game, depth, alpha, beta)
+        best_move = (-1, -1)
+        best_score = NEG_INF
 
-        return v, move_values[v][0]
+        legal_moves = game.get_legal_moves()
+
+        for move in legal_moves:
+            next_game_state = game.forecast_move(move)
+            v = self.min_value(next_game_state, depth-1, best_score, beta)
+            if v > best_score:
+                best_move = move
+                best_score = v
+        return best_score, best_move
 
     def max_value(self, game, depth, alpha, beta):
+        if self.time_left() < self.TIMER_THRESHOLD:
+            raise Timeout()
+
         if depth == 0:
-            return self.score(game, self), None, None
+            return self.score(game, self)
 
         legal_moves = game.get_legal_moves()
 
         if len(legal_moves) == 0:
-            return 0.0, (-1, -1), None
+            return 0.0
 
         v = NEG_INF
-        move_values = defaultdict(list)
         for move in legal_moves:
             next_game_state = game.forecast_move(move)
-            node_utility, _ = self.min_value(next_game_state, depth-1, alpha, beta)
-
+            node_utility = self.min_value(next_game_state, depth-1, alpha, beta)
             # V is the best value the node as seen so far
             v = max(node_utility, v)
             if v >= beta:
-                return v, move, None
+                return v
             alpha = max(alpha, v)
-            if depth == self.search_depth:
-                move_values[node_utility].append(move)
-        # Probably don't need move
-        return v, move, move_values
+        return v
 
     def min_value(self, game, depth, alpha, beta):
+        if self.time_left() < self.TIMER_THRESHOLD:
+            raise Timeout()
+
         if depth == 0:
-            return self.score(game, self), None
+            return self.score(game, self)
 
         legal_moves = game.get_legal_moves()
+
+        if len(legal_moves) == 0:
+            return 0.0
+
         v = INF
         for move in legal_moves:
             next_game_state = game.forecast_move(move)
-            node_utility, _, _ = self.max_value(next_game_state, depth-1, alpha, beta)
-            # V is the best value the node as seen so far
+            node_utility = self.max_value(next_game_state, depth-1, alpha, beta)
+
             v = min(node_utility, v)
             if v <= alpha:
-                return v, move
+                return v
+
             beta = min(beta, v)
-        return v, move
+        return v

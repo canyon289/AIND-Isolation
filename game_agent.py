@@ -8,7 +8,7 @@ relative strength using tournament.py and include the results in your report.
 """
 import random
 from collections import defaultdict
-
+import ipdb
 
 class Timeout(Exception):
     """Subclass base exception for code clarity."""
@@ -40,7 +40,7 @@ def custom_score(game, player):
     float
         The heuristic value of the current game state to the specified player.
     """
-    score = float(len(game.get_legal_moves()))
+    score = float(len(game.get_legal_moves(player)))
     return score
 
 
@@ -55,7 +55,7 @@ class CustomPlayer:
     search_depth : int (optional)
         A strictly positive integer (i.e., 1, 2, 3,...) for the number of
         layers in the game tree to explore for fixed-depth search. (i.e., a
-        depth of one (1) would only explore the immediate sucessors of the
+        depth of one (1) would only explore the immediate successors of the
         current state.)
 
     score_fn : callable (optional)
@@ -145,9 +145,13 @@ class CustomPlayer:
 
         except Timeout:
             # Handle any actions required at timeout, if necessary
-            self.search_depth = maximum_depth
+            #self.search_depth = maximum_depth
             # Return the best move from the last completed search iteration
-            return move
+            try:
+                return move
+            except UnboundLocalError:
+                return legal_moves[0]
+
 
     def minimax(self, game, depth, maximizing_player=True):
         """Implement the minimax search algorithm as described in the lectures.
@@ -272,7 +276,7 @@ class CustomPlayer:
         legal_moves = game.get_legal_moves()
 
         if len(legal_moves) == 0:
-            return 0.0
+            return float("-inf")
 
         v = NEG_INF
         for move in legal_moves:
@@ -295,7 +299,7 @@ class CustomPlayer:
         legal_moves = game.get_legal_moves()
 
         if len(legal_moves) == 0:
-            return 0.0
+            return float("inf")
 
         v = INF
         for move in legal_moves:

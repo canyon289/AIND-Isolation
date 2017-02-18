@@ -176,7 +176,6 @@ def main():
         print("\n\nResults:")
         print("----------")
         print("{!s:<15}{:>10.2f}%".format(agentUT.name, win_ratio))
-
-
+    return win_ratio
 if __name__ == "__main__":
     main()

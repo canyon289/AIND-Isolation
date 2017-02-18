@@ -177,5 +177,49 @@ def main():
         print("----------")
         print("{!s:<15}{:>10.2f}%".format(agentUT.name, win_ratio))
     return win_ratio
+
+def modified_main(score_functions):
+    """Takes Tuple of score functions and returns the results for each one"""
+    HEURISTICS = [("Null", null_score),
+                  ("Open", open_move_score),
+                  ("Improved", improved_score)]
+    AB_ARGS = {"search_depth": 5, "method": 'alphabeta', "iterative": False}
+    MM_ARGS = {"search_depth": 3, "method": 'minimax', "iterative": False}
+    CUSTOM_ARGS = {"method": 'alphabeta', 'iterative': True}
+
+    # Create a collection of CPU agents using fixed-depth minimax or alpha beta
+    # search, or random selection.  The agent names encode the search method
+    # (MM=minimax, AB=alpha-beta) and the heuristic function (Null=null_score,
+    # Open=open_move_score, Improved=improved_score). For example, MM_Open is
+    # an agent using minimax search with the open moves heuristic.
+    mm_agents = [Agent(CustomPlayer(score_fn=h, **MM_ARGS),
+                       "MM_" + name) for name, h in HEURISTICS]
+    ab_agents = [Agent(CustomPlayer(score_fn=h, **AB_ARGS),
+                       "AB_" + name) for name, h in HEURISTICS]
+    random_agents = [Agent(RandomPlayer(), "Random")]
+
+    # ID_Improved agent is used for comparison to the performance of the
+    # submitted agent for calibration on the performance across different
+    # systems; i.e., the performance of the student agent is considered
+    # relative to the performance of the ID_Improved agent to account for
+    # faster or slower computers.
+    test_agents = [Agent(CustomPlayer(score_fn=improved_score, **CUSTOM_ARGS), "ID_Improved"),
+                   Agent(CustomPlayer(score_fn=custom_score, **CUSTOM_ARGS), "Student")]
+
+    print(DESCRIPTION)
+    for agentUT in test_agents:
+        print("")
+        print("*************************")
+        print("{:^25}".format("Evaluating: " + agentUT.name))
+        print("*************************")
+
+        agents = random_agents + mm_agents + ab_agents + [agentUT]
+        win_ratio = play_round(agents, NUM_MATCHES)
+
+        print("\n\nResults:")
+        print("----------")
+        print("{!s:<15}{:>10.2f}%".format(agentUT.name, win_ratio))
+    return win_ratio
+
 if __name__ == "__main__":
     main()

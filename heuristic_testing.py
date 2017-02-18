@@ -1,36 +1,54 @@
-BOARD_HEIGHT = 7
-BOARD_WIDTH = 7
+# For Zero indexed board
+BOARD_HEIGHT = 6
+BOARD_WIDTH = 6
+MAXIMUM_MOVES = 8
+
 from collections import namedtuple
 from math import sqrt
 
 #Weight are Own Move, Op_Move, Distance Weight, Center Weight
+WEIGHT_NAMES = ["om", "opm", "dm", "cw"]
 WEIGHTS = namedtuple("weights", ["om", "opm", "dm", "cw"])
 
-def custom_score(game, player):
-    if game.is_loser(player):
-        return float("-inf")
 
-    if game.is_winner(player):
-        return float("inf")
 
-    opp = game.get_opponent(player)
-    own_moves = len(game.get_legal_moves(player))
-    opp_moves = len(game.get_legal_moves(opp))
-    own_x, own_y = game.get_player_location(player)
-    opp_x, opp_y = game.get_player_location(opp)
+def score_closure(weights):
+    w = WEIGHTS(weights)
 
-    distance = math.sqrt((own_x-opp_x)**2 + (own_y-opp_y)**2)
+    def custom_score(game, player):
+        if game.is_loser(player):
+            return float("-inf")
 
-    #Normalize to zero
-    distance_score
+        if game.is_winner(player):
+            return float("inf")
 
-    # Center distance hardcoded
-    center = math.sqrt((own_x-BOARD_WIDTH/2)**2 + (own_y-BOARD_HEIGHT/2)**2)
+        opp = game.get_opponent(player)
+        own_moves = len(game.get_legal_moves(player))
+        opp_moves = len(game.get_legal_moves(opp))
+        own_moves_score, opp_moves_score = own_moves/MAXIMUM_MOVES, opp_moves/MAXIMUM_MOVES
 
-    # Normalize to between 0 and 1
-    center_score = distance/math.sqrt((BOARD_HEIGHT/2)**2 + (BOARD_WEIGHT/2)**2
+        own_x, own_y = game.get_player_location(player)
+        opp_x, opp_y = game.get_player_location(opp)
 
-    score = sum(score*weight for score,weight in zip(scores,
-    score = w.own
-    return score
+        distance = math.sqrt((own_x-opp_x)**2 + (own_y-opp_y)**2)
+
+        #Normalize to between 0 and 1
+        distance_score = distance / math.sqrt(BOARD_HEIGHT**2 + BOARD_WIDTH**2)
+
+        # Center distance hardcoded
+        center = math.sqrt((own_x-BOARD_WIDTH/2)**2 + (own_y-BOARD_HEIGHT/2)**2)
+
+        # Normalize to between 0 and 1
+        center_score = distance/math.sqrt((BOARD_HEIGHT/2)**2 + (BOARD_WEIGHT/2)**2)
+
+        scores = [own_moves, opp_moves, distance_score, center_score]
+
+        # Take out of production code
+        for metric,score in zip(scores, WEIGHT_NAMES):
+            assert 0<=score<=1, "{0} for {1} is out of range".format(score,metric)
+
+        score = sum(score*weight for score,weight in zip(scores,w))
+        return score
+
+    return custom_score
 

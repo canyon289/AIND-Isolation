@@ -1,0 +1,3852 @@
+Number of combinations: 192
+
+This script evaluates the performance of the custom heuristic function by
+comparing the strength of an agent using iterative deepening (ID) search with
+alpha-beta pruning against the strength rating of agents using other heuristic
+functions.  The `ID_Improved` agent provides a baseline by measuring the
+performance of a basic agent using Iterative Deepening and the "improved"
+heuristic (from lecture) on your hardware.  The `Student` agent then measures
+the performance of Iterative Deepening and the custom heuristic against the
+same opponents.
+
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 20 to 0
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 20 to 0
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 17 to 3
+
+
+Results:
+----------
+Student ScoreTest     82.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 8 to 12
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 16 to 4
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     78.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 16 to 4
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 10 to 10
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 18 to 2
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 17 to 3
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 19 to 1
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 1, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 16 to 4
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 14 to 6
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 18 to 2
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     81.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 10 to 10
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     77.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 17 to 3
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 17 to 3
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 14 to 6
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     77.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 10 to 10
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.8, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     70.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 17 to 3
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     77.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 16 to 4
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 16 to 4
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     80.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     79.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 13 to 7
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0.6, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     79.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 11 to 9
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 8 to 12
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     68.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     67.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     69.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 15 to 5
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     67.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (3, 0, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 13 to 7
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     69.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 18 to 2
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     79.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 15 to 5
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 17 to 3
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 18 to 2
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 16 to 4
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     80.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 17 to 3
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     77.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 1, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 7 to 13
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     68.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 11 to 9
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 16 to 4
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 16 to 4
+
+
+Results:
+----------
+Student ScoreTest     79.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 7 to 13
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 10 to 10
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 20 to 0
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 20 to 0
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     78.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 18 to 2
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     78.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.8, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 14 to 6
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 8 to 12
+
+
+Results:
+----------
+Student ScoreTest     67.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 15 to 5
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 11 to 9
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     69.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 10 to 10
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 15 to 5
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 20 to 0
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 9 to 11
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     79.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 17 to 3
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 10 to 10
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0.6, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     70.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 10 to 10
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     65.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 10 to 10
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 10 to 10
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     65.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 13 to 7
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     64.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     67.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 7 to 13
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     67.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (2, 0, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     67.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 14 to 6
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 10 to 10
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 13 to 7
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 19 to 1
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     80.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 18 to 2
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 19 to 1
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     78.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 19 to 1
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 15 to 5
+
+
+Results:
+----------
+Student ScoreTest     81.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 17 to 3
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 8 to 12
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 15 to 5
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     68.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 1, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 10 to 10
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 18 to 2
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 11 to 9
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     69.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 15 to 5
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 18 to 2
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 20 to 0
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 17 to 3
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     77.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 17 to 3
+
+
+Results:
+----------
+Student ScoreTest     78.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.8, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 12 to 8
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 8 to 12
+
+
+Results:
+----------
+Student ScoreTest     68.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     68.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 14 to 6
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 13 to 7
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 14 to 6
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 10 to 10
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     67.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 10 to 10
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     67.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     71.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     77.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     73.57%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 12 to 8
+
+
+Results:
+----------
+Student ScoreTest     74.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 15 to 5
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0.6, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 20 to 0
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     70.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 1, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 1, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 8 to 12
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 1, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 15 to 5
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 16 to 4
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 6 to 14
+
+
+Results:
+----------
+Student ScoreTest     72.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 1, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 18 to 2
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0.6, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 15 to 5
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 7 to 13
+
+
+Results:
+----------
+Student ScoreTest     67.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0.6, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 7 to 13
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 13 to 7
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     69.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0.6, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 13 to 7
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 10 to 10
+
+
+Results:
+----------
+Student ScoreTest     69.29%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0.6, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 19 to 1
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 17 to 3
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 14 to 6
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0.2, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 13 to 7
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 10 to 10
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 8 to 12
+
+
+Results:
+----------
+Student ScoreTest     67.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0.2, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 15 to 5
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 11 to 9
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 15 to 5
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     72.86%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0.2, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 19 to 1
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 14 to 6
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 14 to 6
+
+
+Results:
+----------
+Student ScoreTest     76.43%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0.2, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 20 to 0
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 14 to 6
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 16 to 4
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     75.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0, 1)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 13 to 7
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 19 to 1
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 11 to 9
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     75.00%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0, 0.6)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 17 to 3
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 16 to 4
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 11 to 9
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 14 to 6
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 15 to 5
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 9 to 11
+
+
+Results:
+----------
+Student ScoreTest     67.14%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0, 0.2)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 18 to 2
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 17 to 3
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 9 to 11
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 16 to 4
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 9 to 11
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 13 to 7
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+
+*************************
+Evaluating: Student ScoreTest
+Weights (1, 0, 0, 0)
+*************************
+
+Playing Matches:
+----------
+  Match 1: Student ScoreTest vs   Random    	Result: 16 to 4
+  Match 2: Student ScoreTest vs   MM_Null   	Result: 18 to 2
+  Match 3: Student ScoreTest vs   MM_Open   	Result: 12 to 8
+  Match 4: Student ScoreTest vs MM_Improved 	Result: 17 to 3
+  Match 5: Student ScoreTest vs   AB_Null   	Result: 13 to 7
+  Match 6: Student ScoreTest vs   AB_Open   	Result: 12 to 8
+  Match 7: Student ScoreTest vs AB_Improved 	Result: 11 to 9
+
+
+Results:
+----------
+Student ScoreTest     70.71%
+[(74.28571428571429, (3, 1, 1, 1)), (71.42857142857143, (3, 1, 1, 0.6)), (72.14285714285714, (3, 1, 1, 0.2)), (82.14285714285714, (3, 1, 1, 0)), (72.14285714285714, (3, 1, 0.6, 1)), (74.28571428571429, (3, 1, 0.6, 0.6)), (70.71428571428571, (3, 1, 0.6, 0.2)), (74.28571428571429, (3, 1, 0.6, 0)), (78.57142857142857, (3, 1, 0.2, 1)), (75.0, (3, 1, 0.2, 0.6)), (73.57142857142857, (3, 1, 0.2, 0.2)), (75.0, (3, 1, 0.2, 0)), (75.0, (3, 1, 0, 1)), (76.42857142857143, (3, 1, 0, 0.6)), (76.42857142857143, (3, 1, 0, 0.2)), (77.14285714285714, (3, 1, 0, 0)), (77.14285714285714, (3, 0.8, 1, 1)), (70.71428571428571, (3, 0.8, 1, 0.6)), (81.42857142857143, (3, 0.8, 1, 0.2)), (74.28571428571429, (3, 0.8, 1, 0)), (71.42857142857143, (3, 0.8, 0.6, 1)), (77.85714285714286, (3, 0.8, 0.6, 0.6)), (75.0, (3, 0.8, 0.6, 0.2)), (74.28571428571429, (3, 0.8, 0.6, 0)), (72.14285714285714, (3, 0.8, 0.2, 1)), (75.0, (3, 0.8, 0.2, 0.6)), (77.14285714285714, (3, 0.8, 0.2, 0.2)), (74.28571428571429, (3, 0.8, 0.2, 0)), (77.85714285714286, (3, 0.8, 0, 1)), (72.14285714285714, (3, 0.8, 0, 0.6)), (74.28571428571429, (3, 0.8, 0, 0.2)), (76.42857142857143, (3, 0.8, 0, 0)), (72.85714285714286, (3, 0.6, 1, 1)), (70.0, (3, 0.6, 1, 0.6)), (75.0, (3, 0.6, 1, 0.2)), (77.85714285714286, (3, 0.6, 1, 0)), (77.14285714285714, (3, 0.6, 0.6, 1)), (72.14285714285714, (3, 0.6, 0.6, 0.6)), (80.0, (3, 0.6, 0.6, 0.2)), (75.71428571428571, (3, 0.6, 0.6, 0)), (75.0, (3, 0.6, 0.2, 1)), (77.14285714285714, (3, 0.6, 0.2, 0.6)), (71.42857142857143, (3, 0.6, 0.2, 0.2)), (72.85714285714286, (3, 0.6, 0.2, 0)), (79.28571428571429, (3, 0.6, 0, 1)), (72.14285714285714, (3, 0.6, 0, 0.6)), (72.85714285714286, (3, 0.6, 0, 0.2)), (79.28571428571429, (3, 0.6, 0, 0)), (72.85714285714286, (3, 0, 1, 1)), (72.85714285714286, (3, 0, 1, 0.6)), (74.28571428571429, (3, 0, 1, 0.2)), (72.85714285714286, (3, 0, 1, 0)), (75.71428571428571, (3, 0, 0.6, 1)), (68.57142857142857, (3, 0, 0.6, 0.6)), (72.85714285714286, (3, 0, 0.6, 0.2)), (73.57142857142857, (3, 0, 0.6, 0)), (75.0, (3, 0, 0.2, 1)), (67.85714285714286, (3, 0, 0.2, 0.6)), (69.28571428571429, (3, 0, 0.2, 0.2)), (75.0, (3, 0, 0.2, 0)), (75.0, (3, 0, 0, 1)), (71.42857142857143, (3, 0, 0, 0.6)), (67.85714285714286, (3, 0, 0, 0.2)), (69.28571428571429, (3, 0, 0, 0)), (70.71428571428571, (2, 1, 1, 1)), (72.14285714285714, (2, 1, 1, 0.6)), (73.57142857142857, (2, 1, 1, 0.2)), (71.42857142857143, (2, 1, 1, 0)), (79.28571428571429, (2, 1, 0.6, 1)), (75.0, (2, 1, 0.6, 0.6)), (74.28571428571429, (2, 1, 0.6, 0.2)), (77.14285714285714, (2, 1, 0.6, 0)), (75.71428571428571, (2, 1, 0.2, 1)), (76.42857142857143, (2, 1, 0.2, 0.6)), (80.0, (2, 1, 0.2, 0.2)), (76.42857142857143, (2, 1, 0.2, 0)), (73.57142857142857, (2, 1, 0, 1)), (71.42857142857143, (2, 1, 0, 0.6)), (77.85714285714286, (2, 1, 0, 0.2)), (72.14285714285714, (2, 1, 0, 0)), (72.85714285714286, (2, 0.8, 1, 1)), (68.57142857142857, (2, 0.8, 1, 0.6)), (79.28571428571429, (2, 0.8, 1, 0.2)), (70.71428571428571, (2, 0.8, 1, 0)), (73.57142857142857, (2, 0.8, 0.6, 1)), (77.14285714285714, (2, 0.8, 0.6, 0.6)), (71.42857142857143, (2, 0.8, 0.6, 0.2)), (74.28571428571429, (2, 0.8, 0.6, 0)), (76.42857142857143, (2, 0.8, 0.2, 1)), (75.0, (2, 0.8, 0.2, 0.6)), (78.57142857142857, (2, 0.8, 0.2, 0.2)), (77.14285714285714, (2, 0.8, 0.2, 0)), (75.71428571428571, (2, 0.8, 0, 1)), (78.57142857142857, (2, 0.8, 0, 0.6)), (72.14285714285714, (2, 0.8, 0, 0.2)), (74.28571428571429, (2, 0.8, 0, 0)), (67.14285714285714, (2, 0.6, 1, 1)), (74.28571428571429, (2, 0.6, 1, 0.6)), (69.28571428571429, (2, 0.6, 1, 0.2)), (72.14285714285714, (2, 0.6, 1, 0)), (72.14285714285714, (2, 0.6, 0.6, 1)), (75.0, (2, 0.6, 0.6, 0.6)), (75.0, (2, 0.6, 0.6, 0.2)), (72.85714285714286, (2, 0.6, 0.6, 0)), (79.28571428571429, (2, 0.6, 0.2, 1)), (72.85714285714286, (2, 0.6, 0.2, 0.6)), (75.0, (2, 0.6, 0.2, 0.2)), (76.42857142857143, (2, 0.6, 0.2, 0)), (74.28571428571429, (2, 0.6, 0, 1)), (75.0, (2, 0.6, 0, 0.6)), (75.71428571428571, (2, 0.6, 0, 0.2)), (76.42857142857143, (2, 0.6, 0, 0)), (70.0, (2, 0, 1, 1)), (65.71428571428571, (2, 0, 1, 0.6)), (72.14285714285714, (2, 0, 1, 0.2)), (70.71428571428571, (2, 0, 1, 0)), (65.71428571428571, (2, 0, 0.6, 1)), (64.28571428571429, (2, 0, 0.6, 0.6)), (74.28571428571429, (2, 0, 0.6, 0.2)), (72.85714285714286, (2, 0, 0.6, 0)), (74.28571428571429, (2, 0, 0.2, 1)), (67.85714285714286, (2, 0, 0.2, 0.6)), (71.42857142857143, (2, 0, 0.2, 0.2)), (75.0, (2, 0, 0.2, 0)), (73.57142857142857, (2, 0, 0, 1)), (70.71428571428571, (2, 0, 0, 0.6)), (67.85714285714286, (2, 0, 0, 0.2)), (67.85714285714286, (2, 0, 0, 0)), (73.57142857142857, (1, 1, 1, 1)), (74.28571428571429, (1, 1, 1, 0.6)), (74.28571428571429, (1, 1, 1, 0.2)), (70.71428571428571, (1, 1, 1, 0)), (74.28571428571429, (1, 1, 0.6, 1)), (80.71428571428571, (1, 1, 0.6, 0.6)), (75.0, (1, 1, 0.6, 0.2)), (75.71428571428571, (1, 1, 0.6, 0)), (76.42857142857143, (1, 1, 0.2, 1)), (78.57142857142857, (1, 1, 0.2, 0.6)), (76.42857142857143, (1, 1, 0.2, 0.2)), (81.42857142857143, (1, 1, 0.2, 0)), (77.14285714285714, (1, 1, 0, 1)), (68.57142857142857, (1, 1, 0, 0.6)), (75.0, (1, 1, 0, 0.2)), (75.0, (1, 1, 0, 0)), (76.42857142857143, (1, 0.8, 1, 1)), (69.28571428571429, (1, 0.8, 1, 0.6)), (74.28571428571429, (1, 0.8, 1, 0.2)), (73.57142857142857, (1, 0.8, 1, 0)), (73.57142857142857, (1, 0.8, 0.6, 1)), (75.71428571428571, (1, 0.8, 0.6, 0.6)), (71.42857142857143, (1, 0.8, 0.6, 0.2)), (74.28571428571429, (1, 0.8, 0.6, 0)), (72.14285714285714, (1, 0.8, 0.2, 1)), (72.85714285714286, (1, 0.8, 0.2, 0.6)), (77.14285714285714, (1, 0.8, 0.2, 0.2)), (77.85714285714286, (1, 0.8, 0.2, 0)), (74.28571428571429, (1, 0.8, 0, 1)), (71.42857142857143, (1, 0.8, 0, 0.6)), (78.57142857142857, (1, 0.8, 0, 0.2)), (68.57142857142857, (1, 0.8, 0, 0)), (68.57142857142857, (1, 0.6, 1, 1)), (71.42857142857143, (1, 0.6, 1, 0.6)), (71.42857142857143, (1, 0.6, 1, 0.2)), (67.14285714285714, (1, 0.6, 1, 0)), (72.85714285714286, (1, 0.6, 0.6, 1)), (67.85714285714286, (1, 0.6, 0.6, 0.6)), (71.42857142857143, (1, 0.6, 0.6, 0.2)), (77.14285714285714, (1, 0.6, 0.6, 0)), (76.42857142857143, (1, 0.6, 0.2, 1)), (73.57142857142857, (1, 0.6, 0.2, 0.6)), (74.28571428571429, (1, 0.6, 0.2, 0.2)), (73.57142857142857, (1, 0.6, 0.2, 0)), (75.0, (1, 0.6, 0, 1)), (74.28571428571429, (1, 0.6, 0, 0.6)), (75.71428571428571, (1, 0.6, 0, 0.2)), (70.0, (1, 0.6, 0, 0)), (72.14285714285714, (1, 0, 1, 1)), (72.14285714285714, (1, 0, 1, 0.6)), (72.14285714285714, (1, 0, 1, 0.2)), (76.42857142857143, (1, 0, 1, 0)), (67.85714285714286, (1, 0, 0.6, 1)), (69.28571428571429, (1, 0, 0.6, 0.6)), (69.28571428571429, (1, 0, 0.6, 0.2)), (76.42857142857143, (1, 0, 0.6, 0)), (67.85714285714286, (1, 0, 0.2, 1)), (72.85714285714286, (1, 0, 0.2, 0.6)), (76.42857142857143, (1, 0, 0.2, 0.2)), (75.71428571428571, (1, 0, 0.2, 0)), (75.0, (1, 0, 0, 1)), (67.14285714285714, (1, 0, 0, 0.6)), (70.71428571428571, (1, 0, 0, 0.2)), (70.71428571428571, (1, 0, 0, 0))]

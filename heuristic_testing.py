@@ -4,7 +4,8 @@ BOARD_WIDTH = 6
 MAXIMUM_MOVES = 8
 
 from collections import namedtuple
-from math import sqrt
+import math
+import ipdb
 
 #Weight are Own Move, Op_Move, Distance Weight, Center Weight
 WEIGHT_NAMES = ["om", "opm", "dm", "cw"]
@@ -13,7 +14,8 @@ WEIGHTS = namedtuple("weights", ["om", "opm", "dm", "cw"])
 
 
 def score_closure(weights):
-    w = WEIGHTS(weights)
+#    ipdb.set_trace()
+    w = WEIGHTS(*weights)
 
     def custom_score(game, player):
         if game.is_loser(player):
@@ -39,15 +41,16 @@ def score_closure(weights):
         center = math.sqrt((own_x-BOARD_WIDTH/2)**2 + (own_y-BOARD_HEIGHT/2)**2)
 
         # Normalize to between 0 and 1
-        center_score = distance/math.sqrt((BOARD_HEIGHT/2)**2 + (BOARD_WEIGHT/2)**2)
+        center_score = center/math.sqrt((BOARD_HEIGHT/2)**2 + (BOARD_WIDTH/2)**2)
 
-        scores = [own_moves, opp_moves, distance_score, center_score]
+        scores = [own_moves_score, opp_moves_score, distance_score, center_score]
 
         # Take out of production code
-        for metric,score in zip(scores, WEIGHT_NAMES):
+        for score,metric in zip(scores, WEIGHT_NAMES):
             assert 0<=score<=1, "{0} for {1} is out of range".format(score,metric)
 
-        score = sum(score*weight for score,weight in zip(scores,w))
+        weighted_score = [score*weight for score,weight in zip(scores,w)]
+        score = weighted_score[0] - sum(weighted_score[1:])
         return score
 
     return custom_score

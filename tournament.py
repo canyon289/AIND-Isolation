@@ -31,7 +31,7 @@ from sample_players import null_score
 from sample_players import open_move_score
 from sample_players import improved_score
 from game_agent import CustomPlayer
-from game_agent import custom_score
+from heuristic_testing import score_closure
 
 NUM_MATCHES = 5  # number of matches against each opponent
 TIME_LIMIT = 150  # number of milliseconds before timeout
@@ -178,7 +178,7 @@ def main():
         print("{!s:<15}{:>10.2f}%".format(agentUT.name, win_ratio))
     return win_ratio
 
-def modified_main(score_functions):
+def modified_main(weights_array):
     """Takes Tuple of score functions and returns the results for each one"""
     HEURISTICS = [("Null", null_score),
                   ("Open", open_move_score),
@@ -203,14 +203,17 @@ def modified_main(score_functions):
     # systems; i.e., the performance of the student agent is considered
     # relative to the performance of the ID_Improved agent to account for
     # faster or slower computers.
-    test_agents = [Agent(CustomPlayer(score_fn=improved_score, **CUSTOM_ARGS), "ID_Improved"),
-                   Agent(CustomPlayer(score_fn=custom_score, **CUSTOM_ARGS), "Student")]
+
 
     print(DESCRIPTION)
-    for agentUT in test_agents:
+    weight_win = []
+    for weights in weights_array:
+        custom_score = score_closure(weights)
+        agentUT = Agent(CustomPlayer(score_fn=custom_score, **CUSTOM_ARGS), "Student ScoreTest")
         print("")
         print("*************************")
         print("{:^25}".format("Evaluating: " + agentUT.name))
+        print("Weights {0}".format(weights))
         print("*************************")
 
         agents = random_agents + mm_agents + ab_agents + [agentUT]
@@ -219,7 +222,21 @@ def modified_main(score_functions):
         print("\n\nResults:")
         print("----------")
         print("{!s:<15}{:>10.2f}%".format(agentUT.name, win_ratio))
-    return win_ratio
+        weight_win.append((win_ratio, weights))
+    print(weight_win)
+    return weight_win
 
 if __name__ == "__main__":
-    main()
+    import itertools
+    import pickle
+    own_moves = [3, 2, 1]
+    op_moves = [1, .8, .6, 0]
+    center_weights = [1, .6, .2, 0]
+    distance_weights = [1, .6, .2, 0]
+    weights = list(itertools.product(own_moves, op_moves, center_weights, distance_weights))
+    #weights = list(itertools.product(own_moves[:1], op_moves[:1], center_weights[:1], distance_weights[:1]))
+    #weights = list(itertools.product(own_moves[:2], op_moves[:2]))
+    print("Number of combinations: {0}".format(len(weights)))
+    weight_win = modified_main(weights)
+    with open("output.p", 'wb') as f:
+        pickle.dump(weight_win,f)

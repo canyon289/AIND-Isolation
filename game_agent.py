@@ -8,7 +8,9 @@ relative strength using tournament.py and include the results in your report.
 """
 import random
 from collections import defaultdict
+import math
 import ipdb
+
 
 class Timeout(Exception):
     """Subclass base exception for code clarity."""
@@ -16,9 +18,12 @@ class Timeout(Exception):
 
 INF = 1000000
 NEG_INF = -1 * INF
+BOARD_HEIGHT = 6
+BOARD_WIDTH = 6
+MAXIMUM_MOVES = 8
 
 
-def custom_score(game, player):
+def custom_score_original(game, player):
     """Calculate the heuristic value of a game state from the point of view
     of the given player.
 
@@ -41,9 +46,44 @@ def custom_score(game, player):
         The heuristic value of the current game state to the specified player.
     """
     score = float(len(game.get_legal_moves(player)))
+    
     return score
+    
+def custom_score(game, player):
+    #Weights from Cross Validation
+    w = (3,1,1,0)
+    
+    if game.is_loser(player):
+        return float("-inf")
 
+    if game.is_winner(player):
+        return float("inf")
 
+    opp = game.get_opponent(player)
+    own_moves = len(game.get_legal_moves(player))
+    opp_moves = len(game.get_legal_moves(opp))
+    own_moves_score, opp_moves_score = own_moves/MAXIMUM_MOVES, opp_moves/MAXIMUM_MOVES
+
+    own_x, own_y = game.get_player_location(player)
+    opp_x, opp_y = game.get_player_location(opp)
+
+    distance = math.sqrt((own_x-opp_x)**2 + (own_y-opp_y)**2)
+
+    #Normalize to between 0 and 1
+    distance_score = distance / math.sqrt(BOARD_HEIGHT**2 + BOARD_WIDTH**2)
+
+    # Center distance hardcoded
+    center = math.sqrt((own_x-BOARD_WIDTH/2)**2 + (own_y-BOARD_HEIGHT/2)**2)
+
+    # Normalize to between 0 and 1
+    center_score = center/math.sqrt((BOARD_HEIGHT/2)**2 + (BOARD_WIDTH/2)**2)
+
+    scores = [own_moves_score, opp_moves_score, distance_score, center_score]
+
+    weighted_score = [score*weight for score,weight in zip(scores,w)]
+    score = weighted_score[0] - sum(weighted_score[1:])
+    return score
+    
 class CustomPlayer:
     """Game-playing agent that chooses a move using your evaluation function
     and a depth-limited minimax algorithm with alpha-beta pruning. You must

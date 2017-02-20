@@ -11,8 +11,6 @@ import ipdb
 WEIGHT_NAMES = ["om", "opm", "dm", "cw"]
 WEIGHTS = namedtuple("weights", ["om", "opm", "dm", "cw"])
 
-
-
 def score_closure(weights):
 #    ipdb.set_trace()
     w = WEIGHTS(*weights)
@@ -44,10 +42,6 @@ def score_closure(weights):
         center_score = center/math.sqrt((BOARD_HEIGHT/2)**2 + (BOARD_WIDTH/2)**2)
 
         scores = [own_moves_score, opp_moves_score, distance_score, center_score]
-
-        # Take out of production code
-        for score,metric in zip(scores, WEIGHT_NAMES):
-            assert 0<=score<=1, "{0} for {1} is out of range".format(score,metric)
 
         weighted_score = [score*weight for score,weight in zip(scores,w)]
         score = weighted_score[0] - sum(weighted_score[1:])
